@@ -19,6 +19,7 @@ restService.post("/div", function(req, res) {
     req.body.result.parameters &&
     req.body.result.parameters.number ? req.body.result.parameters.number 
       : 0;
+   divnum=divnum/10;
   return res.json({
     divnum: divnum,
     displayText: divnum,
