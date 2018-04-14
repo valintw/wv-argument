@@ -25,7 +25,7 @@ restService.post("/div", function(req, res) {
     req.body.result.parameters.divisor ? req.body.result.parameters.divisor 
       : 1;
   
-  var speech= "The number you orginially thought of was "+ (divnum / divisor);
+  var speech= "The number you orginally thought of was "+ (divnum / divisor);
   
   return res.json({
     speech: speech,
