@@ -25,11 +25,11 @@ restService.post("/div", function(req, res) {
     req.body.result.parameters.divisor ? req.body.result.parameters.divisor 
       : 1;
   
-  divnum = divnum / divisor;
+  var speech= "The number you orginially thought of was "+ (divnum / divisor);
   
   return res.json({
-    divnum: divnum,
-    displayText: divnum,
+    speech: speech,
+    displayText: speech,
     source: "willmaths"
   });
 });
